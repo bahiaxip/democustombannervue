@@ -1,0 +1,110 @@
+/* animaciones ventana de código */
+  .pre.flex{
+    transition: all .6s linear;
+    max-height:0
+  }
+  .pre.flex.active{
+    max-height:1200px;
+    
+  }
+  .code.flex{   
+    opacity:0;
+    transition:opacity 1s linear .2s, visibility .5s linear;
+    visibility:hidden;
+  }
+  .code.flex.active{
+    opacity:1;
+    transition:opacity 1s linear;
+    visibility:visible;
+  }
+  /* animaciones botón */
+  .button{
+    background-color:#ff5599;
+    color:white;
+    display:inline-block;
+    line-height:40px;
+    font-weight:bold;
+    height:40px;
+    overflow:hidden;
+    position:relative;
+    transition:width .3s linear;
+    width:180px;
+
+    white-space:nowrap;
+  }
+  .button.cambio{
+    width:220px;
+  }
+  .button.cambio .button_text{
+    top:-100%;
+    
+  }
+
+  /*.button.cambio{
+    width:160px;
+  }*/
+  .button_text{
+    align-items:center;
+    display:flex;
+    font-family:Comfortaa;
+    font-size:16px;
+    justify-content:center;
+    height:100%;
+    position:relative;
+    top:0%;
+    transition:top .4s ease-in-out;
+    margin:auto;
+  }
+
+  .ccssb
+  {
+    font-family:'Comfortaa';
+    /*padding:2px 8px 4px 8px;
+    padding:5px 12px;*/
+    display:flex;
+    justify-content:center;
+    border:none;border-radius:5px;
+    font-weight:bold;font-size:15px;
+    min-width:80px;
+    /*height:30px;*/
+    transition:bottom 0.1s linear, box-shadow .1s linear, width .4s linear;
+    position:relative;bottom:0;
+    outline:none;
+    overflow:hidden;
+    display:inline-block;
+    text-align:center
+  }
+  .ccssb:active
+  {
+    bottom:-3px;
+  }
+  .ccssb_fucsia
+  {
+    box-shadow:0 3px 0 #000, 2px 2px 2px #959595 inset,
+    -2px -2px 2px #959595 inset;
+    background-color:rgba(0,0,0,.8);
+    color:#FFF;
+    cursor:pointer
+  }
+  .ccssb_fucsia:active
+  {
+    box-shadow:0 0 0 #000, 1px 1px 2px #000 inset,-1px -1px 2px #000 inset;
+  }
+
+
+@font-face{
+  font-family:"Comfortaa";
+  src: url("fonts/comfortaa/Comfortaa-Bold.ttf");
+}
+@font-face{
+  font-family:"Poppins";
+  src: url('fonts/poppins/Poppins-SemiBold.ttf');
+}
+@font-face{
+  font-family:"YoutubeM";
+  src: url('fonts/Youtube-Sans-font/youtube-sans-medium.ttf');
+}
+@font-face{
+  font-family:"YoutubeB";
+  src: url('fonts/Youtube-Sans-font/youtube-sans-bold.ttf');
+}
