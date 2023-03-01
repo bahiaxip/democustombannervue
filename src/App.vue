@@ -166,13 +166,20 @@ header{
   color:white;
   display:flex;
   height:60px;
+  width:100%;
+  justify-content:space-between;
 
   
 }
 header .image{
+  display:flex;
+  height:100%;
   width:15%;
 }
-header .image img{
+header .image{
+  
+}
+header .image.left img{
   width: 32px;
   height:32px;
 }
@@ -444,6 +451,9 @@ header .image .home_menu.show{
 @media screen and (max-width:500px) {
     header{
       height:80px;
+    }
+    header .image,header .title{
+      width:auto;
     }
     
     /*

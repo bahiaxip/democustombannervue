@@ -169,7 +169,7 @@
 							left:true
 						},
 						3:{
-							fontSizeStyle:"18px",
+							
 							modeText:true,
 						}
 					},
