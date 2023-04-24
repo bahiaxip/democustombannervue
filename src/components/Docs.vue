@@ -684,4 +684,13 @@ export default {
 	}
 </script>
 <style>
+	.boxdocs{
+		font-family: Montserrat;
+	}
+	.boxdocs h3, .boxdocs p{
+		padding:0 10px;
+	}
+	.boxdocs h3{
+		font-size:20px;
+	}
 </style>
